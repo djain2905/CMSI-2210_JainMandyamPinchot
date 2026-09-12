@@ -1,0 +1,38 @@
+
+
+Evaluation Criteria ~ homework01
+CMSI 2210 Section 01 Fall 2023
+=================================
+
+SAYHELLO.C
+   file exists          0/1 pt.
+   file compiles        0/1 pt.
+   program runs         0/1 pt.
+   prompts user         0/1 pt.
+   reads input          0/1 pt.
+   displays hello name  0/1 pt.
+SAYHELLO.ASM
+   file exists          0/1 pt.
+   file assembles       0/1 pt.
+   programruns          0/1 pt.
+GENERAL
+   code style           0/1 pt.
+
+Total possible points 10
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 0/10 which is 0% which is an F on this assignment
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+Hmmmm....
+
+Unfortunately, you don't have the homework01 assignment in your repository
+   where it should have been at the end of week one.  Your homework
+   structure is empty ~ there's no code anywhere that I can see.  I can't
+   evaluate what isn't there!
+
+Bummer...
