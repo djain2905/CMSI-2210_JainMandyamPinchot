@@ -1,7 +1,7 @@
 
 
 Evaluation Criteria ~ homework03
-CMSI 2210 Section 01 Fall 2025
+CMSI 2210 Section 01 Fall 2026
 =================================
 
 CONVERSIONS
