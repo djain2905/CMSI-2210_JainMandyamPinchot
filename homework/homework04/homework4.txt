@@ -1,0 +1,101 @@
+1. AND/OR/NOT:
+X := A or (B and C)
+Y := not-A or can
+
+NAND ONLY: 
+X := nand(nand(A,A), nand(B,C))
+Y := nand(A, nand(C,C))
+
+2. c := (not-a1 and b1) or (not-a1 and a0 and not -b0) or (b1 and a0 and not-b0)
+
+3. A. and r, 0xAAAAAAAA
+B. or r, 0x00000007
+C. and r, 0x00000007
+D. or r, 0xFFFFFFFF
+E. xor r, 0xC0000000
+F. and r, 0xFFFFFFF8
+
+4. 
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    printf("Enter N: ");
+    while (scanf("%d", &n) !=1 || n<=0) {
+        printf("Error: enter a positive integer: ")
+        while(getchar() != '\n'); 
+    }
+    for (int i=1 1, i<=n; i++) {
+        if(i % 15 == 0) printf("fizz-buzz\n");
+        else if(i % 3 == 0) printf("fizz\n");
+        else if(i % 5 == 0) printf("buzz\n");
+        else printf("%d\n", i);
+    }
+    return 0; 
+}
+
+5. 
+          JUMP     start
+    i:     0          
+    one:   1
+    limit: 256
+    start: LOAD      i
+           OUT       0x8
+           ADD       one 
+           STORE     i
+           SUB       limit
+           JLZ       start 
+    halt:  JUMP      halt
+
+6. 
+0: C0000004
+1: 00000000
+2: 00000001
+3: 00000100
+4: 00000001
+5: 30000008
+6: 40000002
+7: 10000001
+8: 50000003
+9: E0000004
+A: C000000A
+
+7. 
+       JUMP  start
+x:      0
+y:      0
+t:      0
+start:  IN    0x100
+        STORE x
+        IN    0x100
+        STORE y
+loop:   LOAD  y
+        JZ    done
+        LOAD  x
+        MOD   y
+        STORE t
+        LOAD  y
+        STORE x
+        LOAD  t
+        STORE y
+        JUMP  loop
+done:   LOAD  x
+        OUT   0x200
+halt:   JUMP  halt
+
+8. 
+        STORE temp1
+        LOAD  0x30AA
+        STORE temp2
+        LOAD  temp1
+        STORE 0x30AA
+        LOAD  temp2
+
+9. 
+
+        JZ    0x837BBE1
+        JGZ   0x837BBE1
+
+10. 
+Part 1: It swaps the values in r8 and r9 without using a temporary register
+Part 2: XOR cancels itself (x xor x = 0, x xor 0 = x). After the first step r8 holds a xor b. XORing that with b leaves a, and XORing it with a leaves b.
