@@ -1,0 +1,81 @@
+
+
+Evaluation Criteria ~ homework04
+CMSI 2210 Section 01 Fall 2026
+=================================
+
+LOGIC DESIGN
+   Logic Question 1a          8 pts.
+   Logic Question 1b          5 pts.
+   Logic Question 2           8 pts.
+
+REGISTER OPERATIONS
+   Register clear even        2 pts.
+   Register set last 3        2 pts.
+   Reg./8 remainder           2 pts.
+   Reg. set to -1             2 pts.
+   Reg. invert 2 MSBs         2 pts.
+   Register computation       2 pts.
+
+"C" CODE FIZZ-BUZZ PROGRAM
+   Program compiles           3 pts.
+   Program runs               0 pts.
+   Produces correct output    0 pts.
+
+STANLEY/PENGUIN ASSEMBLY
+   Q5 - program 1a            9 pts.
+   Q6 - program 1b           11 pts.
+   Q7 - GCD prog.             9 pts.
+   Q8 - swap frag             5 pts.
+   Q9 - jmp to addr           5 pts.
+
+REGISTER INVESTIGATION
+   Q10a - high level expl.    5 pts.
+   Q10b - Why?                5 pts.
+
+
+Total possible points       100 points
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 100.0/ 100.0 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+question 1, you give X := A or (B and C), which matches the solution, but
+   the second expression appears to contain a typo: Y := not-A or can.
+   Given the context, this appears intended to be Y := not-A or C, but as
+   written it is not correct.  Partial credit awarded.
+question 2, you provide a Boolean expression for the comparator output
+   rather than a circuit diagram.  The expression appears consistent with
+   the required function, but the requested circuit is not provided.
+   Substantial partial credit.
+question 4, the code won't compile.  There are several errors:
+   * Missing semicolon after printf("Error: enter a positive integer: ")
+   * for (int i=1 1, i<=n; i++) contains invalid syntax and will not compile.
+   * Some escaped formatting appears inconsistent.
+   * Missing curly-braces in the if-else block
+   Partial credit for the code.  Since it won't compile, I can't give credit
+   for running and correct output.
+question 5, the Stanley/Penguin code is incorrect.  The logic is sound but
+   the syntax is wrong.  There is no "out" instruction, and you need to have
+   "[]" around memory locations.
+question 6, translating incorrect code, but translated correctly.
+question 7, incorrect instructions "IN", "OUT", and "JUMP".  No "[]" anywhere.
+   Partial credit.
+
+Good job!
+
+========================================================
+SEMESTER SCORE SO FAR:
+
+   homework01 ~   0.00% of  5 points =  0.00 points
+   homework02 ~  95.00% of  5 points =  4.75 points
+   homework03 ~ 100.00% of  5 points =  5.00 points
+   homework04 ~  85.00% of  5 points =  4.25 points
+                                total: 14.00 out of 20.0 = 70.00%
+                                which is a C
+
+Don't get discouraged, I know you can do this!  Keep working at it...
